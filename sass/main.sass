@@ -1,0 +1,315 @@
+@import "fonts"
+@import "libs"
+@import "base"
+@import "vars"
+
+
+// VARS
+body
+	position: relative
+*
+	margin: 0
+	padding: 0
+.wrapper
+	padding: 0 286px
+.clearfix
+	clear: both
+// My Custom Stylessss
+
+.header
+	width: 100%
+	height: 65px
+	background-image: linear-gradient(to right, rgb(225, 88, 124) 0%, rgb(250, 201, 130) 100%);
+	position: fixed
+	top: 0
+	z-index: 10
+	&-nav
+		padding-top: 10px
+		&--logo
+			float: left
+			& i 
+				font-size: 40px
+				color: $white
+		&--phone
+			display: block
+			float: right
+			padding-right: 10%
+			& p
+				font-family: 'blogger-sans-bold'
+				color: $header
+				line-height: 33px
+				&:before
+					content: "\f2a0"
+					font-family: "fontAwesome"
+					margin-right: 10px
+					font-size: 28px
+
+.congratulation
+	margin-bottom: 50px	
+	&--h2
+		text-align: center
+		font-size: 48px
+		width: 540px
+		margin: 100px auto 50px auto
+		font-family: 'blogger-sans-bold'
+		color: $accent
+		position: relative
+		&:before
+			content: url("../img/flower-left.png")
+			position: absolute
+			left: 0		
+		&:after
+			content: url("../img/flower-right.png")
+			position: absolute
+			right: 0
+	&--h3
+		font-family: 'blogger-sans-bold'
+		text-transform: uppercase
+		color: $accent
+		text-align: center
+		font-size: 22px
+
+
+.main-content
+	display: table
+	width: 100%
+	&-leftside
+		display: table-cell
+		width: 50%
+		&-video
+		&-calendar
+			width: 100%
+			position: relative
+			&:after
+				content: ""
+				height: 90%
+				width: 5px
+				position: absolute
+				left: 40px
+				top: 10px
+				z-index: 0
+				border-left: 2px dashed $accent
+			
+			&--item
+				margin-left: 20%
+				margin-top: 50px
+				position: relative
+
+				& .date-img
+					position: absolute
+					left: -25%
+					top: 0
+					width: 80px
+					height: 80px
+					border-radius: 50%
+					background-image: url("../img/calendar.png")
+					color: $white
+					text-align: center
+					font-size: 25px
+					font-family: 'blogger-sans-bold'
+					line-height: 3.2
+					z-index: 1
+				& .lector
+					font-family: 'festus'
+					font-size: 30px
+					color: $accent
+					margin: 0
+				& .theme
+					font-family: 'blogger-sans-bold'
+					font-size: 20px
+					width: 270px
+					color: $grey
+					text-transform: uppercase
+					margin: 0
+					&:before
+						content: ""
+						width: 100%
+						height: 2px
+						display: block
+						background-image: linear-gradient(to left, rgb(225, 88, 124) 0%, rgb(250, 201, 130) 100%);
+					&:after
+						content: ""
+						width: 100%
+						height: 2px
+						display: block
+						background-image: linear-gradient(to left, rgb(225, 88, 124) 0%, rgb(250, 201, 130) 100%);
+				& ul
+					margin-left: 20px
+
+					& li
+						color: $dots-color
+						margin: 10px 0
+						list-style-type: none
+						position: relative
+						&:before
+							content: ""
+							width: 5px
+							height: 5px
+							display: block
+							border-radius: 50%
+							background-color: $accent
+							position: absolute
+							left: -15px
+							top: 5px
+						& p
+							font-family: 'blogger-sans'
+							font-size: 16px
+							line-height: 16px
+							color: $grey
+
+
+
+	&-rightside
+		display: table-cell
+		width: 50%
+		margin-left: 60px
+		vertical-align: top
+		&-header
+			width: 100%
+			&--leftSection
+				width: 55%
+				margin-left: 5%
+				float: left
+				& .online-course-name
+					width: 100%
+					height: auto
+					display: block
+					margin: 0 auto
+			&--rightSection
+				width: 40%
+				float: left
+				& .date-circle-info
+					text-align: center
+					width: 140px
+					height: 140px
+					background-image: url("../img/15bg.png")
+					background-position: 15px 0
+					background-repeat: no-repeat			
+					span
+						background-color: $bordo
+						text-align: center
+						font-family: 'blogger-sans-bold'
+						text-transform: uppercase
+						font-size: 12px
+						padding: 0 10px
+						border-radius: 15%
+						color: $white
+					p:nth-child(2)
+						font-family: 'blogger-sans-bold'
+						font-size: 63px
+						line-height: 50px
+						color: $pink
+					p:nth-child(3)
+						font-family: 'blogger-sans-bold'
+						font-size: 15px
+						text-transform: uppercase
+						color: $pink
+			& .nextActions
+				margin-top: 20px
+				&--header
+					font-family: 'blogger-sans-bold'
+					font-size: 20px
+					width: 100%
+					color: $grey
+					text-transform: uppercase
+					&:after
+						content: ""
+						width: 50%
+						margin: 7px 0
+						height: 2px
+						display: block
+						background-image: linear-gradient(to left, rgb(225, 88, 124) 0%, rgb(250, 201, 130) 100%);
+				&--actions
+					& li
+						font-family: 'blogger-sans'
+						font-size: 16px
+						line-height: 16px
+						margin-top: 10px
+						text-indent: 20px
+						color: $grey
+						list-style-type: none
+						position: relative
+						&:before
+							content: ""
+							width: 5px
+							height: 5px
+							display: block
+							border-radius: 50%
+							background-color: $accent
+							position: absolute
+							left: 5px
+							top: 5px
+		&-participants
+			width: 100%
+			margin-top: 70px
+			&--member
+				width: 65%
+				min-height: 122px
+				position: relative
+				margin-bottom: 20px
+				background-image: url("../img/border.png")
+				background-size: cover
+				background-position: center center
+				background-repeat: no-repeat
+				p 
+					font-family: 'blogger-sans'
+					font-size: 16px
+					margin-left: 30%
+					line-height: 16px
+					padding: 10px 10px 0 0
+					color: $grey
+					span
+						font-family: 'blogger-sans-bold'
+						font-size: 20px
+						color: $accent
+				img
+					position: absolute
+					top: 15px
+					left: 15px
+
+
+		// footer
+.footer
+	width: 100%
+	background-image: linear-gradient(to right, rgb(225, 88, 124) 0%, rgb(250, 201, 130) 100%);
+	position: relative
+	.flex-box-wrapper
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+	&-left
+
+		ul li
+			list-style-type: none
+			display: inline-block
+			margin: 25px 5px
+			a
+				i 
+					color: $white
+					font-size: 19px
+					background-color: #d5376c
+					border-radius: 50%
+					width: 40px
+					height: 40px
+					text-align: center
+					line-height: 2
+	&-middle
+		padding-top: 10px
+		opacity: .6
+		img
+			margin-left: 25%
+		p 
+			color: $white
+	&-right
+
+		ul li
+			color: $white
+			a 
+				color: $white
+				text-decoration: none
+				transition: color 1s ease
+				&:hover
+					color: $pink
+
+
+@import "media" // Всегда в конце
