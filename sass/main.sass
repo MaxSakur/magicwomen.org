@@ -30,6 +30,9 @@ body
 			& i 
 				font-size: 40px
 				color: $white
+				transition: color 1s ease
+				&:hover
+					color: $yellow
 		&--phone
 			display: block
 			float: right
@@ -324,6 +327,23 @@ body
 				transition: color 1s ease
 				&:hover
 					color: $pink
-
+	.upbutton
+		width: 60px
+		height: 60px
+		background-color: $accent
+		position: absolute
+		right: 0
+		bottom: 90px
+		text-align: center
+		transition: all 2s ease
+		i 
+			color: $white
+			font-size: 50px
+		&:hover
+			color: $accent
+			background-color: $white
+			border: 1px solid $accent
+		&:hover i
+			color: $accent
 
 @import "media" // Всегда в конце

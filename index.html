@@ -17,13 +17,13 @@
 
 <body>
 
-	<header id="header" class="header">
+	<header class="header">
 		<div class="wrapper">
-			<nav class="header-nav">
+			<nav id="body" class="header-nav">
 				<!-- Левый блок -->
 				<div class="header-nav--logo">
-					<a href="#" onclick="history.back()"><i class="fa fa-angle-left"></i></a>
-					<a href="http://magicwomen.org/"><img src="img/logo-bf.png" alt="logo"></a>
+					<a href="#" title="Назад" onclick="history.back()"><i class="fa fa-angle-left"></i></a>
+					<a href="http://magicwomen.org/" data-toggle="tooltip" title="На главную"><img src="img/logo-bf.png" alt="logo"></a>
 				</div>
 				<!-- Правый блок -->
 				<div class="header-nav--phone">	
@@ -280,8 +280,13 @@
 	<div class="clearfix"></div>
 
 	<footer class="footer">
-
+	
 		<div class="wrapper">
+			
+			<div class="upbutton">
+				<a href="#" title="В начало" class="scrollup"><i class="fa fa-angle-up"></i></a>
+			</div>
+
 			<div class="flex-box-wrapper">
 				<div class="footer-left">
 					<ul>
